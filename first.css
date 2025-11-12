@@ -1,0 +1,121 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+    
+    a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 30px;
+        text-align: center;
+    }
+    height: 100px;
+    width: 100%;
+   background-color: lightseagreen;
+}
+.image{
+    height: 200px;
+    width: 100%;
+    background-color: orange;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+
+    .card1{
+    height: 420px;
+    width: 420px;
+    background-color: red;
+
+    }
+    .card2{
+    height: 420px;
+    width: 420px;
+    background-color: red;
+
+    }
+    .card3{
+    height: 420px;
+    width: 420px;
+    background-color: red;
+
+    }
+
+}
+
+
+/* tablet view */
+@media screen and (min-width: 768px){   
+   .cards{
+        display: block;
+        width: 100%;
+        gap: 20px;
+        .card1{
+            width: 100%;
+            margin: 20px;
+        }
+        .card2{
+            width: 100%;
+            margin: 20px;
+        }
+        .card3{
+            width: 100%;
+            margin: 20px;
+        }
+    }
+
+    .navbar{
+        background-color: greenyellow;
+    }
+    .image{
+        background-color: blueviolet;
+
+    }
+}
+
+
+/* mobile view */
+@media screen and (max-width: 768px){   
+    .cards{
+        display: block;
+        width: 100%;
+        gap: 10px;
+        .card1{
+            width: 100%;
+            margin: 20px;
+        }
+        .card2{
+            width: 100%;
+            margin: 20px;
+        }
+        .card3{
+            width: 100%;
+            margin: 20px;
+            
+
+            
+
+        }
+
+    }
+    .navbar{
+        background-color: mediumvioletred;
+    }
+    .image{
+        background-color: forestgreen;
+
+    }
+}
+
+
